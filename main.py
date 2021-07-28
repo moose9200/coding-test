@@ -1,6 +1,3 @@
-
-
-
 from wand.image import Image
 from PIL import Image as PI
 import pytesseract
@@ -97,8 +94,6 @@ text = pytesseract.image_to_string(filename, config=config)
 print(text)
 
 os.remove(filename)
-
-# correct the spelling mistake
 
 # Outout the result
 text = text.encode('UTF-8')
